@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+    --input-color: #A9AFB9;
+    --font-family1: 'Poppins', sans-serif, arial;
+    --font-family2: 'Roboto', sans-serif, arial;
+}
+
+body {
+    background-color: var(--background);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 5%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+section {
+    background-color: var(--form-background);
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+section div h1 img {
+    width: 2rem;
+    height: 2rem;
+}
+
+section div h1 {
+    color: var(--text-title);
+    font-family: var(--font-family1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    
+}
+
+section div p {
+    color: var(--text-base);
+    font-family: var(--font-family2);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 4;
+}
+
+section#login {
+
+}
+
+label {
+    color: var(--text-base);
+    font-family: var(--font-family1);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*------------------INPUT----------------*/
+
+input#email {
+    width: 90%;
+    height: 30px;
+    background-image: url(images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3rem;
+    padding: 0.2rem 1.6rem 0.3rem 1.6rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: var(--text-title);
+}
+
+input#email::placeholder {
+    font-family: var(--font-family2);
+    color: var(--input-color);
+    font-weight: bolder;
+    
+}
+
+input#password {
+    width: 90%;
+    height: 30px;
+    background-image: url(images/lock.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3rem;
+    padding: 0.2rem 1.6rem 0.3rem ;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    
+}
+
+input#password::placeholder {
+    font-family: var(--font-family2);
+    color: var(--input-color);
+    font-weight: bolder;
+    border-radius: 10%;
+    
+}
+
+/*input#password {
+    background-image: url(images/eye.svg);
+    background-position: right;
+}*/
+
+
+
+/*------------------INPUT----------------*/
+
+#image {
+    flex: ;
+}
+
+img {
+    width: ;
+    height: 100vh;
+
+}
+
+button {
+    width: 340px;
+    height: 50px;
+    color: #473404;
+    background-color: var(--primary-color);
+    font-family: var(--font-family1);
+    font-weight: bolder;
+    font-size: 18px;    
+    
+}
