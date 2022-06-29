@@ -2,6 +2,8 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -17,27 +19,60 @@
 
 body {
     background-color: var(--background);
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
 }
 
-header {
-    width: 5%;
-    display: flex;
-    justify-content: flex-start;
+#logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
 }
-
 
 section {
-    background-color: var(--form-background);
     display: flex;
-    flex: 2;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 10px;
+    gap: 2rem;
+}
+
+#login {
+    width: 25vw;
+    height: 50vh;
+    background-color: var(--form-background);
+    flex: 1;
+    padding: 70px;
+    position: absolute;
+    left: 13%;
+    top: 23%;
+    
+}
+
+label#remember input {
+    padding-bottom: 5px;
+}
+
+label#remember a{
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+.image {
+    position: absolute;
+    right: 0;
+    width: 1200px;
+    height: 969px;
+    background-image: url(./images/side-image-2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    
+}
+
+#car {
+    width: 50vw;
+    height: 99vh;
+    
 }
 
 section div h1 img {
@@ -62,9 +97,7 @@ section div p {
     line-height: 4;
 }
 
-section#login {
 
-}
 
 label {
     color: var(--text-base);
@@ -76,7 +109,7 @@ label {
 /*------------------INPUT----------------*/
 
 input#email {
-    width: 90%;
+    width: 100%;
     height: 30px;
     background-image: url(images/mail.svg);
     background-repeat: no-repeat;
@@ -97,7 +130,7 @@ input#email::placeholder {
 }
 
 input#password {
-    width: 90%;
+    width: 100%;
     height: 30px;
     background-image: url(images/lock.svg);
     background-repeat: no-repeat;
@@ -107,14 +140,14 @@ input#password {
     background-color: transparent;
     border: 1px solid white;
     border-radius: 6px;
-    
+    color: var(--text-title);
 }
 
 input#password::placeholder {
     font-family: var(--font-family2);
     color: var(--input-color);
     font-weight: bolder;
-    border-radius: 10%;
+    
     
 }
 
@@ -127,23 +160,13 @@ input#password::placeholder {
 
 /*------------------INPUT----------------*/
 
-#image {
-    flex: ;
-}
-
-img {
-    width: ;
-    height: 100vh;
-
-}
-
 button {
-    width: 340px;
+    width: 100%;
     height: 50px;
     color: #473404;
     background-color: var(--primary-color);
     font-family: var(--font-family1);
     font-weight: bolder;
     font-size: 18px;    
-    
+    border-radius: 6px;
 }
