@@ -17,10 +17,12 @@
     --font-family2: 'Roboto', sans-serif, arial;
 }
 
-body {
+#background {
     background-color: var(--background);
     display: flex;
     min-height: 100vh;
+    gap: 2rem;
+    
 }
 
 #logo {
@@ -29,38 +31,25 @@ body {
     left: 40px;
 }
 
-section {
-    display: flex;
-    gap: 2rem;
-}
-
 #login {
-    width: 25vw;
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-left: 50px;
+    width: 100%;
+    max-width: 720px;
+    max-height: 500px;
+    padding: 50px 50px 40px;
     background-color: var(--form-background);
-    flex: 1;
-    padding: 70px;
-    position: absolute;
-    left: 13%;
-    top: 23%;
-    
+    justify-content: center;
 }
 
-label#remember input {
-    padding-bottom: 5px;
-}
 
-label#remember a{
-    color: var(--primary-color);
-    text-decoration: none;
-
-}
 
 .image {
-    position: absolute;
     right: 0;
     width: 1200px;
-    height: 969px;
+    height: 100vh;
     background-image: url(./images/side-image-2x.jpg);
     background-size: cover;
     background-position: center;
@@ -75,30 +64,6 @@ label#remember a{
     
 }
 
-section div h1 img {
-    width: 2rem;
-    height: 2rem;
-}
-
-section div h1 {
-    color: var(--text-title);
-    font-family: var(--font-family1);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    
-}
-
-section div p {
-    color: var(--text-base);
-    font-family: var(--font-family2);
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 4;
-}
-
-
-
 label {
     color: var(--text-base);
     font-family: var(--font-family1);
@@ -106,16 +71,45 @@ label {
     font-weight: bold;
 }
 
-/*------------------INPUT----------------*/
+/*-----------------LOGIN----------------*/
+
+.login-header {
+    display: block;
+    align-items: center;
+}
+
+.login-header h1 {
+    display: flex;
+    color: var(--text-title);
+    font-size: 24px;
+    font-family: var(--font-family1);
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-header img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+}
+
+.login-header p {
+    color: var(--text-base);
+    font-family: var(--font-family2);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
 
 input#email {
     width: 100%;
-    height: 30px;
+    height: 44px;
     background-image: url(images/mail.svg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: 7px;
     background-size: 1.3rem;
-    padding: 0.2rem 1.6rem 0.3rem 1.6rem;
+    padding: 0.2rem 1.6rem 0.3rem 35px;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 6px;
@@ -131,12 +125,12 @@ input#email::placeholder {
 
 input#password {
     width: 100%;
-    height: 30px;
+    height: 44px;
     background-image: url(images/lock.svg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: 7px;
     background-size: 1.3rem;
-    padding: 0.2rem 1.6rem 0.3rem ;
+    padding: 0.2rem 1.6rem 0.3rem 35px;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 6px;
@@ -151,14 +145,40 @@ input#password::placeholder {
     
 }
 
-/*input#password {
-    background-image: url(images/eye.svg);
-    background-position: right;
-}*/
+#login-checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#login-checkbox input {
+    align-items: center;
+    
+    width: 18px;
+    height: 20px;
+    border: 1px solid rgb(94, 92, 92);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    cursor: pointer;
+}
 
 
+#login-checkbox a{
+    justify-content: end;
+    color: var(--primary-color);
+    font-family: var(--font-family1);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
 
-/*------------------INPUT----------------*/
+#login-checkbox a:hover {
+    text-decoration: underline;
+}
 
 button {
     width: 100%;
@@ -167,6 +187,37 @@ button {
     background-color: var(--primary-color);
     font-family: var(--font-family1);
     font-weight: bolder;
-    font-size: 18px;    
+    font-size: 18px;  
+    letter-spacing: 0.015em;  
     border-radius: 6px;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: #dca20f;
+    transition: .2s ease-in-out;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    color: var(--text-base);
+    font-family: var(--font-family1);
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 10px;
+    
+}
+
+.register a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+/*input#password {
+    background-image: url(images/eye.svg);
+    background-position: right;
+}*/
+
+
+/*-----------------LOGIN----------------*/
+

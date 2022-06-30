@@ -17,31 +17,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="background">
     <img id="logo" src="images/logo.svg" alt="">
-    <section>
+
         <div id="login">
             
-            <h1><img src="images/log-in.svg" alt="icone login"> Faça seu login</h1>
-            <p>Entre com suas informações de cadastro.</p>
+            <div class="login-header">
+                <h1><img src="images/log-in.svg" alt="icone login"> Faça seu login</h1>
+                <p>Entre com suas informações de cadastro.</p>
+            </div>
 
-            <label for="email">E-mail <br><input id="email" type="email" placeholder= "Digite seu e-mail"></label><br>
+            <div>
+                <label for="email">E-mail <br><input id="email" type="email" placeholder= "Digite seu e-mail"
+                required
+                pattern=".+@\."></label><br>
+                <br>
+                
+                <label for="password">Senha <br><input id="password" type="password" placeholder="Digite sua senha"
+                inputmode="numeric"
+                required
+                title="Somente números"
+                pattern="[0-9]"
+                minlength="6"
+                maxlength="12"></label>
+            </div>
             <br>
-            
-            <label for="password">Senha <br><input id="password" type="password" placeholder="Digite sua senha"></label>
-            <br><br>
 
-            <label for="remember" id="remember"><input type="checkbox" id="remember"> Lembre-me <a href="#">Esqueci minha senha</a></label>
+            <div id="login-checkbox">
+                <label for="checkbox" class="checkbox-label"> 
+                    <input type="checkbox" id="checkbox" name="check-box"> Lembre-me 
+                </label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            
 
             <button type="submit">ENTRAR</button>
 
+            <div class="register">
+                <p>Não tem uma conta? <a href="#"><strong> Registre-se</strong></a></p>
+            </div>
         </div>
 
         <div class="image">
             
         </div>
-    </section>
-    
     
 </body>
 </html>
