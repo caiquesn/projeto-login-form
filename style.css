@@ -44,8 +44,6 @@
     justify-content: center;
 }
 
-
-
 .image {
     right: 0;
     width: 1200px;
@@ -55,13 +53,6 @@
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
-    
-}
-
-#car {
-    width: 50vw;
-    height: 99vh;
-    
 }
 
 label {
@@ -120,7 +111,6 @@ input#email::placeholder {
     font-family: var(--font-family2);
     color: var(--input-color);
     font-weight: bolder;
-    
 }
 
 input#password {
@@ -154,7 +144,6 @@ input#password::placeholder {
 
 #login-checkbox input {
     align-items: center;
-    
     width: 18px;
     height: 20px;
     border: 1px solid rgb(94, 92, 92);
